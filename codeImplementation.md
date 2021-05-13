@@ -1,5 +1,4 @@
-# Lottie Animation Campfire 🔥
-
+# Lottie Animation Campfire: 🔥 Implementation 🔥
 
 ![cattyping](./images/cattyping.gif)
 
