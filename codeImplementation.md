@@ -3,15 +3,15 @@
 
 ![cattyping](./images/cattyping.gif)
 
-## Dont want to read the docs? heres the TLDR
+## the TLDR on adding a Lottie Animation
 
-In this example we'll go over what i did to implement a Toggle for Edit Products page within User-Management
+### In this example we'll go over what i did to implement a Toggle for Edit Products page within User-Management
 
-Obtain the json from you UI dev and copy it your your project. I created a folder for all our lotties.
+1. Obtain the json from you UI dev and copy it your your project. I created a folder for all our lotties.
 
 ![toggle](./images/toggleAnimation.gif)
 
-import it into the component where you will use it. dont forget to `yarn add react-lottie` !!
+2. import it into the component where you will use it. dont forget to `yarn add react-lottie` !!
 
 ```jsx
 import Lottie from "react-lottie";
@@ -27,7 +27,7 @@ import animationDataOnToOff from "../../lotties/on-off_toggle.json";
 <br></br>
 <br></br>
 
-The Lottie needs to be configured. Lets create those config objects
+3. The Lottie needs to be configured. Lets create those config objects
 ```jsx
 
     const OffOptions = {
@@ -49,7 +49,7 @@ The Lottie needs to be configured. Lets create those config objects
 <br></br>
 <br></br>
 
-Now, since we are using two lotties, we will need some state to keep track of which one is currectly active
+4. Now, since we are using two lotties, we will need some state to keep track of which one is currectly active
 
 We will also need to use our `checked` prop to control changing that state
 > the checked prop comes from the parent component(ex: the page that conatins the toggle) and tell the toggle component whether to be checked or not
@@ -81,7 +81,7 @@ We will also need to use our `checked` prop to control changing that state
 
 
 
-Now we can define lottie in our toggle component. 
+5. Now we can define lottie in our toggle component.
 
 We are still using a regular html `<input>` to act as the toggle ( code is within the `renderInput()` function), since the lottie animation is simply an animation and doesnt come with standard toggling ability.
 
@@ -120,7 +120,7 @@ So we render the `input` as hidden. We'll have to do a bit of hacking to make th
     ...
  ```
 
-note, we must set the size, since the animation by default was quite large. thankfully lottie gives us a prop to handle this so we dont need to get into the css.
+note, we must set the size, since the animation by default was quite large. thankfully lottie gives us a prop to handle this so we dont need to get into any css.
 
 <br></br>
 <br></br>
@@ -134,6 +134,7 @@ note, we must set the size, since the animation by default was quite large. than
 
 
 # 💥
+at this point we should have an animation on the screen!
 
 
 
