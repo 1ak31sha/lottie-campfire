@@ -7,10 +7,10 @@
 ## Why I loved lottie right off the bat 💥
 
 - The designers' intentions are most accurately reflected
-- Easy to implement as a developer
+- Easy to implement as a developer( as opposed to recreating the animations from scratch in CSS or D3 etc)
 - Little to no CSS for the developer.
 - Good documentation
-- Animations are fast and aren't too large (js bundle size)
+- Animations are crisp and aren't too large (js bundle size)
 - Open-source and free
 - Designed by AirBNB
 

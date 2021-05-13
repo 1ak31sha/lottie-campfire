@@ -7,7 +7,7 @@
 
 ### In this example we'll go over what i did to implement a Toggle for Edit Products page within User-Management
 
-1. Obtain the json from you UI dev and copy it your your project. I created a folder for all our lotties.
+1. Obtain the json from your UI dev and copy it your your project. I created a folder for all our lotties.
 
 ![toggle](./images/toggleAnimation.gif)
 
@@ -49,10 +49,10 @@ import animationDataOnToOff from "../../lotties/on-off_toggle.json";
 <br></br>
 <br></br>
 
-4. Now, since we are using two lotties, we will need some state to keep track of which one is currectly active
+4. Now, since we are using two lotties, we will need some state to keep track of whether the animations are stopped or started.
 
-We will also need to use our `checked` prop to control changing that state
-> the checked prop comes from the parent component(ex: the page that conatins the toggle) and tell the toggle component whether to be checked or not
+We will also need to use our `checked` prop to control changing that state, as well as which lottie to render
+> the `checked` prop comes from the parent component(ex: the page that conatins the toggle) and tell the toggle component whether to be checked or not
 
 ```jsx
     import React, { useState, useEffect } from "react";
@@ -87,7 +87,9 @@ We are still using a regular html `<input>` to act as the toggle ( code is withi
 
 We'd id rather stick to html elements for the functionality so that i dont need to worry about redoing all that an input does
 
-So we render the `input` as hidden. We'll have to do a bit of hacking to make this work as you'll see.
+So we render the `input` with `visibility: hidden;`. We'll have to do a bit of hacking to make this work as you'll see.
+
+![input](./images/input-type-checkbox.png)
 ```jsx
     ...
 
